@@ -1,0 +1,277 @@
+/*
+CSS del index y de los header y footer que comparten
+la mayoria de archivos
+*/
+
+body {
+    background-color: #8d9494b6;
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    width: 100%;
+    height:100px;
+}
+
+
+aside {
+    margin-right: 20px;
+    text-align: right;
+    margin-top: 50px; 
+    padding-bottom: 10px;
+}
+
+
+header nav {
+	background:#333;
+	margin-bottom:10px;
+
+}
+
+header nav ul {
+	overflow: hidden;
+}
+
+header nav ul li {
+    list-style-type: none;
+	float: left;
+}
+
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#fff;
+	text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+header nav ul li a:hover {
+	background:#ad320c;
+}
+
+header nav ul li a:active {
+    background: #4d0806;
+}
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+}
+
+
+
+.contenedor {
+    position: relative;
+    max-width: 50%;
+    margin-left: 25%;
+    padding-bottom: 10px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:white;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.redes-sociales img{
+    max-height: 75px;
+}
+
+/*
+Diseño general de los documentos de pelicula, series y xogos
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+td ul li{
+    text-align: left;
+}
+
+.responsive-video {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Diseño del curriculum del apartado sobre min
+*/
+
+body.curriculum{
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7e5e6;
+    overflow: hidden;
+  }
+  .summary{
+    margin-bottom: 40px;
+  }
+  
+ .summary h1{
+    padding-bottom: 40px;
+ }
+ .details h2{
+    color:#3a3636;
+ }
+ .details h3{
+    color: gray;
+ }
+ .summary h1,h2,h3{
+    text-transform: uppercase;
+ }
+
+.summary img{
+    border:1px solid black;
+    margin-left: 80px;
+    max-height: 240px;
+}
+.experiencia{
+    padding-top: 5px;
+} 
+  .details ul {
+    padding: 5px;
+    margin-left: 20px;
+  }
+  .details li{
+    padding: 3px;
+  }
+
+.datos p{
+font-size: 0.75em;
+font-weight: bold;
+color:grey;
+}
+
+.sociales img{
+    max-height: 25px;
+    border: unset;
+    margin: 0%;
+}
+
+/*
+Diseño para las fotos de las series con cambios de colores y saturacion
+*/
+
+.contenedortabla img{
+    width: 400px;
+    height: 315px;
+    transition: filter 0.5s ease;
+}
+.got img:hover {
+    filter: blur(5px);
+}
+
+.bad img:hover {
+    filter: grayscale(100%);
+}
+
+.dark img:hover {
+    filter: saturate(500%);
+}
+
+.dex img:hover {
+    opacity: 0.5;
+}
+
+/*
+Diseño para las fotos de los juegos con rotaciones y transiciones
+*/
+
+.zelda img:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+    transition: transform 600ms ease-in-out;
+    
+}
+.zeldaa{
+    overflow: hidden;
+    
+}
+
+.horizon img:hover{
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+    transition: transform 600ms ease-in-out;
+}
+
+.pokemon img:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 600ms ease-in-out;
+}
+
+.gow img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transition: transform 600ms ease-in-out;
+}

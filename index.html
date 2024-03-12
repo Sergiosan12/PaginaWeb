@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Imagenes/fav1.png">
+
+</head>
+<body>
+    <header>
+        <img src="Imagenes/123.jpg">
+        <nav class="menu">   
+            <ul style="list-style-type: square;">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="pelicula.html">Películas</a></li>
+                <li><a href="xogos.html">Xogos</a></li>
+                <li><a href="sobremin.html">Sobre min</a></li>
+            </ul>
+        </nav>
+    
+</header>
+<main>
+    <aside>
+        <form>
+            Usuario:
+            <input type="text" id="usuario" name="usuario"><br><br>
+            Contrasinal:
+            <input type="password" id="contrasinal" name="contrasinal"><br><br>
+            <input type="submit" value="Iniciar sesión">
+        </form><br>
+
+        <h2 style="margin-right: 30px;">Película</h2>
+        <nav>
+            <form id="movieForm">
+                <select id="movieSelect" name="movie" onchange="window.location.href = this.value;">
+                    <option value="">Selecciona una película</option>
+                    <option value="pelicula.html#shutter">Shutter Island</option>
+                    <option value="pelicula.html#getout">Get Out</option>
+                    <option value="pelicula.html#truman">The Truman Show</option>
+                    <option value="pelicula.html#mystic">Mystic River</option>
+                </select>
+            </form>
+        </nav>
+
+
+    
+    </aside>
+
+    <div class="contenedor">
+        <img title="Texto descriptivo imagen" src="Imagenes/netf.jpeg" alt="Imagen de ejemplo" class="imagen">
+        <div class="texto-superpuesto">
+            <p title="Texto descriptivo de otro texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, molestiae ipsa cumque perferendis voluptates voluptatum! Explicabo architecto ab nesciunt iure recusandae eius molestiae eveniet assumenda error. Possimus in odio corrupti!</p>
+        </div>
+    </div>
+
+</main>
+<footer>
+    <div>
+        <div>
+            <div>
+                <h4>Información de Contacto</h4>
+                <p>123 Calle principal<br>
+                Vigo, España<br>
+                Teléfono: 123-456-789<br>
+                Email: sergio@empresa.com</p>
+            </div>
+                <h4>Síguenos en Redes Sociales</h4>
+                <div class="redes-sociales">
+                    <a href="https://facebook.com" target="_blank"><img src="Imagenes/fb.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="Imagenes/tw.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="Imagenes/instaa.png" alt="Instagram"></a>
+                </div>
+            
+        </div>
+    </div>
+</footer>
+</body>
